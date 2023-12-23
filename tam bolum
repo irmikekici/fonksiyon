@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int ir(int n)
+{
+	if(n%2==0)
+	{
+		return 1;
+
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+int ek(int n)
+{
+	if(n%3==0)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+
+
+
+
+int main()
+{
+	int n;
+	printf("Bir sayi giriniz!\n");
+	scanf("%d",&n);
+	if(ir(n)==1)
+	{
+		printf("Sayimiz cift sayidir\n");
+	}
+	if(ek(n)==1)
+	{
+		printf("Sayimiz 3 ile tam bolunur\n");
+	}
+	if(ir(n)==1 && ek(n)==1)
+	{
+		printf("Sayimiz 6 ile tam bolunur\n");
+	}
+	return 0;
+}
